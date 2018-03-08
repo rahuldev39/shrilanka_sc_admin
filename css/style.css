@@ -955,10 +955,10 @@ File: scss
     display: none; }
 
     .page-wrapper {
-        background: #f1efde;
-        padding-bottom: 60px;
-        position: relative;
-    }
+    background: #fffffb;
+    padding-bottom: 60px;
+    position: relative;
+}
 
 .container-fluid {
   padding: 25px 25px; }
@@ -2517,9 +2517,27 @@ textarea {
 Form-control
 ******************/
 .form-control {
-  color: #67757c;
-  min-height: 38px;
-  display: initial; }
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 12px;
+    line-height: 1.5;
+    color: #2d2e2f;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d6d6d5;
+    border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  
+}
+
+.form-control:focus {
+    color: #313233;
+    background-color: #fff;
+    border-color: #d4cec5;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(243, 243, 234);
+}
 
 .form-control-sm {
   min-height: 20px; }
